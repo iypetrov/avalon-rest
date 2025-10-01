@@ -1,0 +1,22 @@
+app:
+  endpoint:
+    baseUrl: "http://localhost:8080"
+cors:
+  allowedOrigins: "http://localhost:5173"
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/avalon"
+    username: "user"
+    password: "pass"
+  devtools:
+    restart:
+      enabled: true
+logging:
+  level:
+    org.springframework.web: INFO
+aws:
+  accessKeyId: "minioaccesskey"
+  secretAccessKey: "miniosecretkey"
+  region: "eu-central-1"
+  s3:
+    bucketName: "test-bucket"
